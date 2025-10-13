@@ -5,6 +5,20 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import Construction from "./pages/services/Construction";
+import Design from "./pages/services/Design";
+import Structural from "./pages/services/Structural";
+import MEP from "./pages/services/MEP";
+import Interior from "./pages/services/Interior";
+import Facades from "./pages/services/Facades";
+import Landscaping from "./pages/services/Landscaping";
+import Waterproofing from "./pages/services/Waterproofing";
+import Modular from "./pages/services/Modular";
+import Maintenance from "./pages/services/Maintenance";
+import Temporary from "./pages/services/Temporary";
+import Specialty from "./pages/services/Specialty";
+import Smart from "./pages/services/Smart";
+import ValueAdded from "./pages/services/ValueAdded";
 
 const queryClient = new QueryClient();
 
@@ -16,7 +30,20 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/services/construction" element={<Construction />} />
+          <Route path="/services/design" element={<Design />} />
+          <Route path="/services/structural" element={<Structural />} />
+          <Route path="/services/mep" element={<MEP />} />
+          <Route path="/services/interior" element={<Interior />} />
+          <Route path="/services/facades" element={<Facades />} />
+          <Route path="/services/landscaping" element={<Landscaping />} />
+          <Route path="/services/waterproofing" element={<Waterproofing />} />
+          <Route path="/services/modular" element={<Modular />} />
+          <Route path="/services/maintenance" element={<Maintenance />} />
+          <Route path="/services/temporary" element={<Temporary />} />
+          <Route path="/services/specialty" element={<Specialty />} />
+          <Route path="/services/smart" element={<Smart />} />
+          <Route path="/services/value-added" element={<ValueAdded />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

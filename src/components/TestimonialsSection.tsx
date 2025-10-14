@@ -1,5 +1,6 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { Quote } from 'lucide-react';
+import Autoplay from 'embla-carousel-autoplay';
 import client1 from '@/assets/clients/client-1.jpg';
 import client2 from '@/assets/clients/client-2.jpg';
 import client3 from '@/assets/clients/client-3.jpg';
@@ -104,6 +105,11 @@ const TestimonialsSection = () => {
               align: "start",
               loop: true,
             }}
+            plugins={[
+              Autoplay({
+                delay: 3000,
+              }),
+            ]}
             className="w-full"
           >
             <CarouselContent>
@@ -153,6 +159,11 @@ const TestimonialsSection = () => {
                 align: "start",
                 loop: true,
               }}
+              plugins={[
+                Autoplay({
+                  delay: 4000,
+                }),
+              ]}
               className="w-full"
             >
               <CarouselContent>

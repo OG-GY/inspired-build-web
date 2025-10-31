@@ -21,6 +21,7 @@ import Specialty from "./pages/services/Specialty";
 import Smart from "./pages/services/Smart";
 import ValueAdded from "./pages/services/ValueAdded";
 import MetalDomain from "./pages/MetalDomain";
+import ContactUs from "./pages/ContactUs";
 
 const queryClient = new QueryClient();
 
@@ -48,6 +49,7 @@ const App = () => (
           <Route path="/services/smart" element={<Smart />} />
           <Route path="/services/value-added" element={<ValueAdded />} />
           <Route path="/metal" element={<MetalDomain />} />
+          <Route path="/contactus" element={<ContactUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

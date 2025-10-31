@@ -20,7 +20,7 @@ const Navigation = () => {
     { label: 'EXPERTISE', href: '#expertise' },
     { label: 'PROJECTS', href: '#projects' },
     { label: 'METAL DIVISION', href: '/metal' },
-    { label: 'CONTACT', href: '#contact' },
+    { label: 'CONTACT', href: '/contactus' },
   ];
 
   return (

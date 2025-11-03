@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import hero1 from '@/assets/hero-1.jpg';
 import hero2 from '@/assets/hero-2.jpg';
 import hero3 from '@/assets/hero-3.jpg';
@@ -9,28 +10,34 @@ const projects = [
     title: 'Luxury Residential Tower',
     category: 'Residential',
     location: 'Downtown District',
+    link: '/projects/luxury-tower',
   },
   {
     image: hero2,
     title: 'Corporate Headquarters',
     category: 'Commercial',
     location: 'Business Park',
+    link: '/projects/corporate-hq',
   },
   {
     image: hero3,
     title: 'Premium Penthouse',
     category: 'Residential',
     location: 'Waterfront',
+    link: '/projects/premium-penthouse',
   },
   {
     image: constructionExcellence,
     title: 'Mixed-Use Development',
     category: 'Mixed-Use',
     location: 'City Center',
+    link: '/projects/mixed-use',
   },
 ];
 
 const ProjectsSection = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="projects" className="py-24 bg-background">
       <div className="container mx-auto px-4">
@@ -49,6 +56,7 @@ const ProjectsSection = () => {
             <div
               key={index}
               className="group relative overflow-hidden rounded-sm cursor-pointer"
+              onClick={() => navigate(project.link)}
             >
               <div className="relative h-[400px] overflow-hidden">
                 <img

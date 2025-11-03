@@ -1,42 +1,9 @@
 import { useNavigate } from 'react-router-dom';
-import hero1 from '@/assets/hero-1.jpg';
-import hero2 from '@/assets/hero-2.jpg';
-import hero3 from '@/assets/hero-3.jpg';
-import constructionExcellence from '@/assets/construction-excellence.jpg';
-
-const projects = [
-  {
-    image: hero1,
-    title: 'Luxury Residential Tower',
-    category: 'Residential',
-    location: 'Downtown District',
-    link: '/projects/luxury-tower',
-  },
-  {
-    image: hero2,
-    title: 'Corporate Headquarters',
-    category: 'Commercial',
-    location: 'Business Park',
-    link: '/projects/corporate-hq',
-  },
-  {
-    image: hero3,
-    title: 'Premium Penthouse',
-    category: 'Residential',
-    location: 'Waterfront',
-    link: '/projects/premium-penthouse',
-  },
-  {
-    image: constructionExcellence,
-    title: 'Mixed-Use Development',
-    category: 'Mixed-Use',
-    location: 'City Center',
-    link: '/projects/mixed-use',
-  },
-];
+import { getAllProjects } from '@/data/projects';
 
 const ProjectsSection = () => {
   const navigate = useNavigate();
+  const projects = getAllProjects();
 
   return (
     <section id="projects" className="py-24 bg-background">
@@ -56,11 +23,11 @@ const ProjectsSection = () => {
             <div
               key={index}
               className="group relative overflow-hidden rounded-sm cursor-pointer"
-              onClick={() => navigate(project.link)}
+              onClick={() => navigate(`/projects/${project.id}`)}
             >
               <div className="relative h-[400px] overflow-hidden">
                 <img
-                  src={project.image}
+                  src={project.heroImage}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />

@@ -1,0 +1,81 @@
+import { useParams, Navigate } from 'react-router-dom';
+import ProjectDetailLayout from '@/components/ProjectDetailLayout';
+import AlternatingSection from '@/components/AlternatingSection';
+import { getProjectById } from '@/data/projects';
+
+const ProjectDetail = () => {
+  const { projectId } = useParams<{ projectId: string }>();
+  
+  if (!projectId) {
+    return <Navigate to="/construction" replace />;
+  }
+
+  const project = getProjectById(projectId);
+
+  if (!project) {
+    return <Navigate to="/construction" replace />;
+  }
+
+  return (
+    <ProjectDetailLayout 
+      title={project.title} 
+      category={project.category} 
+      location={project.location}
+      heroImage={project.heroImage}
+    >
+      {/* Project Overview */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-serif font-light mb-6 text-foreground">Project Overview</h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+              {project.overview.description}
+            </p>
+            <div className="grid md:grid-cols-3 gap-8 mt-12">
+              {project.overview.stats.map((stat, index) => (
+                <div key={index}>
+                  <h3 className="text-accent text-sm font-semibold tracking-widest uppercase mb-2">{stat.label}</h3>
+                  <p className="text-foreground text-xl font-serif">{stat.value}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Alternating Sections */}
+      {project.sections.map((section, index) => (
+        <AlternatingSection 
+          key={index}
+          title={section.title} 
+          description={section.description} 
+          imageSrc={section.imageSrc} 
+          imageAlt={section.imageAlt} 
+          reverse={section.reverse} 
+        />
+      ))}
+
+      {/* Related Services */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-serif font-light mb-6 text-foreground">Services Delivered</h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+              {project.servicesIntro}
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              {project.services.map((service, index) => (
+                <div key={index} className="bg-background p-6 rounded-sm">
+                  <h3 className="text-xl font-serif mb-3 text-foreground">{service.title}</h3>
+                  <p className="text-muted-foreground">{service.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    </ProjectDetailLayout>
+  );
+};
+
+export default ProjectDetail;

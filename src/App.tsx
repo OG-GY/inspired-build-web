@@ -22,10 +22,7 @@ import Smart from "./pages/services/Smart";
 import ValueAdded from "./pages/services/ValueAdded";
 import MetalDomain from "./pages/MetalDomain";
 import ContactUs from "./pages/ContactUs";
-import LuxuryTower from "./pages/projects/LuxuryTower";
-import CorporateHQ from "./pages/projects/CorporateHQ";
-import PremiumPenthouse from "./pages/projects/PremiumPenthouse";
-import MixedUse from "./pages/projects/MixedUse";
+import ProjectDetail from "./pages/ProjectDetail";
 
 const queryClient = new QueryClient();
 
@@ -54,10 +51,7 @@ const App = () => (
           <Route path="/services/value-added" element={<ValueAdded />} />
           <Route path="/metal" element={<MetalDomain />} />
           <Route path="/contactus" element={<ContactUs />} />
-          <Route path="/projects/luxury-tower" element={<LuxuryTower />} />
-          <Route path="/projects/corporate-hq" element={<CorporateHQ />} />
-          <Route path="/projects/premium-penthouse" element={<PremiumPenthouse />} />
-          <Route path="/projects/mixed-use" element={<MixedUse />} />
+          <Route path="/projects/:projectId" element={<ProjectDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

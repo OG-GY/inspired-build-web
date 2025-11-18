@@ -21,6 +21,7 @@ import Specialty from "./pages/services/Specialty";
 import Smart from "./pages/services/Smart";
 import ValueAdded from "./pages/services/ValueAdded";
 import MetalDomain from "./pages/MetalDomain";
+import Metal2 from "./pages/Metal2";
 import ContactUs from "./pages/ContactUs";
 import ProjectDetail from "./pages/ProjectDetail";
 
@@ -50,6 +51,7 @@ const App = () => (
           <Route path="/services/smart" element={<Smart />} />
           <Route path="/services/value-added" element={<ValueAdded />} />
           <Route path="/metal" element={<MetalDomain />} />
+          <Route path="/metal2" element={<Metal2 />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/projects/:projectId" element={<ProjectDetail />} />
           <Route path="*" element={<NotFound />} />

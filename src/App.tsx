@@ -20,8 +20,14 @@ import Temporary from "./pages/services/Temporary";
 import Specialty from "./pages/services/Specialty";
 import Smart from "./pages/services/Smart";
 import ValueAdded from "./pages/services/ValueAdded";
-import MetalDomain from "./pages/MetalDomain";
-import Metal2 from "./pages/Metal2";
+import Metal from "./pages/Metal";
+import Scrap from "./pages/metal/Scrap";
+import NonFerrous from "./pages/metal/NonFerrous";
+import Steel from "./pages/metal/Steel";
+import Ores from "./pages/metal/Ores";
+import Containers from "./pages/metal/Containers";
+import Wires from "./pages/metal/Wires";
+import Packaging from "./pages/metal/Packaging";
 import ContactUs from "./pages/ContactUs";
 import ProjectDetail from "./pages/ProjectDetail";
 
@@ -50,8 +56,14 @@ const App = () => (
           <Route path="/services/specialty" element={<Specialty />} />
           <Route path="/services/smart" element={<Smart />} />
           <Route path="/services/value-added" element={<ValueAdded />} />
-          <Route path="/metal" element={<MetalDomain />} />
-          <Route path="/metal2" element={<Metal2 />} />
+          <Route path="/metal" element={<Metal />} />
+          <Route path="/metal/scrap" element={<Scrap />} />
+          <Route path="/metal/non-ferrous" element={<NonFerrous />} />
+          <Route path="/metal/steel" element={<Steel />} />
+          <Route path="/metal/ores" element={<Ores />} />
+          <Route path="/metal/containers" element={<Containers />} />
+          <Route path="/metal/wires" element={<Wires />} />
+          <Route path="/metal/packaging" element={<Packaging />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/projects/:projectId" element={<ProjectDetail />} />
           <Route path="*" element={<NotFound />} />

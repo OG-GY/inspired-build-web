@@ -1,6 +1,6 @@
 import ServiceDetailLayout from '@/components/ServiceDetailLayout';
 import AlternatingSection from '@/components/AlternatingSection';
-import steelProducts from '@/assets/metal/steel-products.jpg';
+import steelProducts from '@/assets/metal/steel/steel-products.jpg';
 import structuralSteel from '@/assets/metal/structural-steel.jpg';
 import metalCladding from '@/assets/metal/metal-cladding.jpg';
 import architecturalMetal from '@/assets/metal/architectural-metal.jpg';

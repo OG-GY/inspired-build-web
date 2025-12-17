@@ -1,46 +1,55 @@
 import ServiceDetailLayout from '@/components/ServiceDetailLayout';
 import AlternatingSection from '@/components/AlternatingSection';
-import metalFabrication from '@/assets/metal/metal-fabrication.jpg';
+import metalWires from '@/assets/metal/metal-wires.jpg';
 import structuralSteel from '@/assets/metal/structural-steel.jpg';
 import metalCladding from '@/assets/metal/metal-cladding.jpg';
-import metalExcellence from '@/assets/metal-excellence.jpg';
+import architecturalMetal from '@/assets/metal/architectural-metal.jpg';
+import customMetalwork from '@/assets/metal/custom-metalwork.jpg';
 
 const Wires = () => {
   return (
     <ServiceDetailLayout 
-      title="Metal Wires Trading" 
-      subtitle="Conductors & Industrial Wires"
+      title="Metal Wires, Rods & Cables Trading" 
+      subtitle="Industrial Connectivity"
     >
       <AlternatingSection
-        title="Copper & Aluminium Conductors"
-        description="Power cables, busbars, and wiring products for electrical utilities, construction, and electronics. Copper and aluminium conductors are essential for electrical grids, building wiring, and electronic devices, offering excellent conductivity and reliability."
-        imageSrc={metalFabrication}
-        imageAlt="Copper and aluminium electrical conductors"
+        title="Copper Conductors & Cables"
+        description="Electrical wires, power cables, busbars, and grounding systems."
+        imageSrc={metalWires}
+        imageAlt="Copper conductors and cables"
         reverse={false}
       />
 
       <AlternatingSection
-        title="Steel Wire & Rods"
-        description="High-carbon and stainless steel wires for construction reinforcing mesh, barbed wire, automotive springs and cables, and various industrial applications. Our steel wire products meet stringent quality standards for strength and durability."
+        title="Aluminium Conductors"
+        description="Overhead conductors, power cables, and industrial wiring."
         imageSrc={structuralSteel}
-        imageAlt="Steel wire and rod products"
+        imageAlt="Aluminium conductors"
         reverse={true}
       />
 
       <AlternatingSection
-        title="Specialty Cables"
-        description="Fiber-strand composites, overhead conductor wires, and custom multi-core cables for telecom, automotive, and aerospace applications. These specialized cables are engineered for demanding environments and critical infrastructure."
+        title="Steel Wires & Wire Rods"
+        description="High-carbon, galvanized, stainless, and specialty wires for industrial and structural use."
         imageSrc={metalCladding}
-        imageAlt="Specialty cables and conductors"
+        imageAlt="Steel wires and wire rods"
         reverse={false}
       />
 
       <AlternatingSection
-        title="Wire Mesh & Fencing"
-        description="Metal mesh panels and fencing wire products for security, agriculture, and infrastructure projects. Available in various specifications and materials to meet diverse application requirements from perimeter security to industrial screening."
-        imageSrc={metalExcellence}
-        imageAlt="Wire mesh and fencing products"
+        title="Specialty & Industrial Cables"
+        description="Multi-core, control, telecom, automotive, and aerospace cables."
+        imageSrc={architecturalMetal}
+        imageAlt="Specialty industrial cables"
         reverse={true}
+      />
+
+      <AlternatingSection
+        title="Wire Mesh & Fencing Products"
+        description="Reinforcement mesh, fencing wire, security barriers, and industrial mesh panels."
+        imageSrc={customMetalwork}
+        imageAlt="Wire mesh and fencing products"
+        reverse={false}
       />
     </ServiceDetailLayout>
   );

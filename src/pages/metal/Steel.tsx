@@ -1,54 +1,72 @@
 import ServiceDetailLayout from '@/components/ServiceDetailLayout';
 import AlternatingSection from '@/components/AlternatingSection';
-import metalFabrication from '@/assets/metal/metal-fabrication.jpg';
+import steelProducts from '@/assets/metal/steel-products.jpg';
 import structuralSteel from '@/assets/metal/structural-steel.jpg';
 import metalCladding from '@/assets/metal/metal-cladding.jpg';
 import architecturalMetal from '@/assets/metal/architectural-metal.jpg';
 import customMetalwork from '@/assets/metal/custom-metalwork.jpg';
+import metalFabrication from '@/assets/metal/metal-fabrication.jpg';
+import metalExcellence from '@/assets/metal-excellence.jpg';
 
 const Steel = () => {
   return (
     <ServiceDetailLayout 
       title="Steel & Basic Steel Products Trading" 
-      subtitle="Ferrous Materials Excellence"
+      subtitle="Infrastructure & Construction"
     >
       <AlternatingSection
-        title="Automotive Steel Components"
-        description="Trade in ferrous automotive components and scrap including steel body parts, chassis components, and engine blocks. We export usable steel parts and recycle scrap metal from end-of-life vehicles, supporting sustainable automotive supply chains."
-        imageSrc={metalFabrication}
-        imageAlt="Automotive steel components and parts"
+        title="Carbon & Alloy Steel"
+        description="Structural, mild, and alloy steel products for fabrication and heavy industry."
+        imageSrc={steelProducts}
+        imageAlt="Carbon and alloy steel products"
         reverse={false}
       />
 
       <AlternatingSection
-        title="Structural Steel & Sections"
-        description="Supply of beams, columns, angles, channels, and reinforcement bars (rebar) for construction and infrastructure projects. Our structural steel products meet international standards for strength and reliability in building applications."
+        title="Structural Steel & Reinforcement"
+        description="Beams, columns, angles, channels, joists, and reinforcement bars (rebar) for buildings and infrastructure."
         imageSrc={structuralSteel}
-        imageAlt="Structural steel beams and sections"
+        imageAlt="Structural steel and reinforcement"
         reverse={true}
       />
 
       <AlternatingSection
         title="Steel Sheets, Plates & Coils"
-        description="Trading of hot-rolled and cold-rolled steel coils, sheets, and plates for shipbuilding, machinery, and general fabrication. Available in various grades and thicknesses to meet diverse industrial requirements."
+        description="Hot-rolled, cold-rolled, galvanized, and coated sheets and plates for shipbuilding, machinery, and manufacturing."
         imageSrc={metalCladding}
-        imageAlt="Steel sheets, plates and coils"
+        imageAlt="Steel sheets plates and coils"
         reverse={false}
       />
 
       <AlternatingSection
-        title="Stainless & Alloy Steel"
-        description="Provision of stainless steel and alloy grades for food processing, chemical, medical, and energy industry applications. Our specialty steel products offer superior corrosion resistance and performance in demanding environments."
+        title="Stainless Steel Products"
+        description="Industrial, food-grade, medical, and chemical-grade stainless steel sheets, pipes, and components."
         imageSrc={architecturalMetal}
-        imageAlt="Stainless and alloy steel products"
+        imageAlt="Stainless steel products"
         reverse={true}
       />
 
       <AlternatingSection
         title="Steel Pipes & Tubes"
-        description="Wide range of steel tubes and pipes including welded and seamless options for oil & gas, plumbing, and mechanical systems. Available in various diameters and specifications to meet industry standards."
+        description="Seamless and welded pipes and tubes for oil & gas, plumbing, mechanical, and industrial systems."
         imageSrc={customMetalwork}
         imageAlt="Steel pipes and tubes"
+        reverse={false}
+      />
+
+      <AlternatingSection
+        title="Automotive Steel Metals & Components"
+        description="Steel chassis parts, body panels, engine blocks, surplus components, and scrap from end-of-life vehicles."
+        imageSrc={metalFabrication}
+        imageAlt="Automotive steel components"
+        reverse={true}
+      />
+
+      <AlternatingSection
+        title="New, Surplus & Recycled Steel"
+        description="Primary steel products, excess inventory, and recycled steel materials."
+        imageSrc={metalExcellence}
+        imageAlt="New surplus and recycled steel"
         reverse={false}
       />
     </ServiceDetailLayout>

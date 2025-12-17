@@ -1,7 +1,8 @@
 import ServiceDetailLayout from '@/components/ServiceDetailLayout';
 import AlternatingSection from '@/components/AlternatingSection';
-import metalFabrication from '@/assets/metal/metal-fabrication.jpg';
+import metalOres from '@/assets/metal/metal-ores.jpg';
 import structuralSteel from '@/assets/metal/structural-steel.jpg';
+import metalCladding from '@/assets/metal/metal-cladding.jpg';
 import architecturalMetal from '@/assets/metal/architectural-metal.jpg';
 import customMetalwork from '@/assets/metal/custom-metalwork.jpg';
 import metalExcellence from '@/assets/metal-excellence.jpg';
@@ -10,46 +11,54 @@ const Ores = () => {
   return (
     <ServiceDetailLayout 
       title="Metal Ores & Raw Materials Trading" 
-      subtitle="Primary Feedstocks & Minerals"
+      subtitle="Primary Feedstocks"
     >
       <AlternatingSection
         title="Iron Ore & Pellets"
-        description="Sourcing of iron ore lumps, fines, and pellets for steel mills worldwide. Iron ore serves as the foundation of the global steel industry, essential for infrastructure and construction development across all markets."
-        imageSrc={metalFabrication}
+        description="Iron ore lumps, fines, and pellets supplied to steel mills and foundries."
+        imageSrc={metalOres}
         imageAlt="Iron ore and pellets"
         reverse={false}
       />
 
       <AlternatingSection
-        title="Bauxite, Alumina & Non-Ferrous Ores"
-        description="Trade of aluminium ore (bauxite), alumina, copper concentrate, and other base metal ores serving smelters and refineries. These primary raw materials support the production of non-ferrous metals for aerospace, construction, and electronics."
+        title="Bauxite and Alumina"
+        description="Aluminium ore and refined alumina for smelters and metal producers."
         imageSrc={structuralSteel}
-        imageAlt="Bauxite and alumina raw materials"
+        imageAlt="Bauxite and alumina"
         reverse={true}
       />
 
       <AlternatingSection
-        title="Ferrous & Non-Ferrous Scrap"
-        description="Collection and trading of scrap metal including steel, cast iron, and aluminium scrap as secondary raw material. This boosts circularity in the metals economy, reducing reliance on virgin mining and lowering environmental impact."
-        imageSrc={architecturalMetal}
-        imageAlt="Metal scrap as secondary raw material"
+        title="Copper & Base-Metal Concentrates"
+        description="Concentrates and ores used in refining and smelting operations."
+        imageSrc={metalCladding}
+        imageAlt="Copper and base-metal concentrates"
         reverse={false}
+      />
+
+      <AlternatingSection
+        title="Ferrous & Non-Ferrous Scrap as Feedstock"
+        description="Secondary raw materials supplementing primary ore supply."
+        imageSrc={architecturalMetal}
+        imageAlt="Scrap metal feedstock"
+        reverse={true}
       />
 
       <AlternatingSection
         title="Ferroalloys & Pig Iron"
-        description="Supply of ferrochrome, ferromanganese, pig iron, and other alloys used in steelmaking and foundries. These essential additives improve steel properties and enable production of specialized steel grades."
+        description="Ferrochrome, ferromanganese, ferrosilicon, pig iron, and foundry alloys."
         imageSrc={customMetalwork}
         imageAlt="Ferroalloys and pig iron"
-        reverse={true}
+        reverse={false}
       />
 
       <AlternatingSection
         title="Industrial Minerals & Fluxes"
-        description="Trading of raw minerals including silica, limestone, and other materials used as fluxes or fillers in metal processing. These industrial minerals are essential for smelting operations and metal refining processes."
+        description="Silica, limestone, and other additives used in metallurgical and industrial processes."
         imageSrc={metalExcellence}
         imageAlt="Industrial minerals and fluxes"
-        reverse={false}
+        reverse={true}
       />
     </ServiceDetailLayout>
   );

@@ -1,12 +1,12 @@
 import ServiceDetailLayout from '@/components/ServiceDetailLayout';
 import AlternatingSection from '@/components/AlternatingSection';
-import cargoContainers from '@/assets/metal/containers/cargo-containers.jpg';
-import structuralSteel from '@/assets/metal/structural-steel.jpg';
-import metalCladding from '@/assets/metal/metal-cladding.jpg';
-import architecturalMetal from '@/assets/metal/architectural-metal.jpg';
-import customMetalwork from '@/assets/metal/custom-metalwork.jpg';
-import metalFabrication from '@/assets/metal/metal-fabrication.jpg';
-import metalExcellence from '@/assets/metal-excellence.jpg';
+import newShippingContainers from '@/assets/metal/containers/new-shipping-containers.jpg';
+import usedRefurbishedContainers from '@/assets/metal/containers/used-refurbished-containers.jpg';
+import reeferContainers from '@/assets/metal/containers/reefer-containers.jpg';
+import specializedContainers from '@/assets/metal/containers/specialized-containers.jpg';
+import containerModifications from '@/assets/metal/containers/container-modifications.jpg';
+import containerAccessories from '@/assets/metal/containers/container-accessories.jpg';
+import containerLeasingLogistics from '@/assets/metal/containers/container-leasing-logistics.jpg';
 
 const Containers = () => {
   return (
@@ -17,7 +17,7 @@ const Containers = () => {
       <AlternatingSection
         title="New Shipping Containers"
         description="Factory-new 20ft, 40ft, and high-cube dry containers."
-        imageSrc={cargoContainers}
+        imageSrc={newShippingContainers}
         imageAlt="New shipping containers"
         reverse={false}
       />
@@ -25,7 +25,7 @@ const Containers = () => {
       <AlternatingSection
         title="Used & Refurbished Containers"
         description="Pre-owned containers inspected, repaired, and certified for reuse."
-        imageSrc={structuralSteel}
+        imageSrc={usedRefurbishedContainers}
         imageAlt="Used and refurbished containers"
         reverse={true}
       />
@@ -33,7 +33,7 @@ const Containers = () => {
       <AlternatingSection
         title="Refrigerated (Reefer) Containers"
         description="Temperature-controlled containers for food, pharmaceuticals, and cold-chain logistics."
-        imageSrc={metalCladding}
+        imageSrc={reeferContainers}
         imageAlt="Refrigerated reefer containers"
         reverse={false}
       />
@@ -41,7 +41,7 @@ const Containers = () => {
       <AlternatingSection
         title="Specialized Containers"
         description="Open-top, flat-rack, tank containers, and custom cargo units."
-        imageSrc={architecturalMetal}
+        imageSrc={specializedContainers}
         imageAlt="Specialized containers"
         reverse={true}
       />
@@ -49,7 +49,7 @@ const Containers = () => {
       <AlternatingSection
         title="Container Modifications"
         description="Office containers, storage units, accommodation modules, and custom conversions."
-        imageSrc={customMetalwork}
+        imageSrc={containerModifications}
         imageAlt="Container modifications"
         reverse={false}
       />
@@ -57,7 +57,7 @@ const Containers = () => {
       <AlternatingSection
         title="Container Accessories & Parts"
         description="CSC plates, locking systems, generator sets, and fittings."
-        imageSrc={metalFabrication}
+        imageSrc={containerAccessories}
         imageAlt="Container accessories and parts"
         reverse={true}
       />
@@ -65,7 +65,7 @@ const Containers = () => {
       <AlternatingSection
         title="Container Leasing & Logistics"
         description="Leasing, positioning, transportation, and fleet management services."
-        imageSrc={metalExcellence}
+        imageSrc={containerLeasingLogistics}
         imageAlt="Container leasing and logistics"
         reverse={false}
       />

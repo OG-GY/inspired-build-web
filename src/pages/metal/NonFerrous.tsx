@@ -1,38 +1,38 @@
 import ServiceDetailLayout from '@/components/ServiceDetailLayout';
 import AlternatingSection from '@/components/AlternatingSection';
-import nonFerrousMetals from '@/assets/metal/non-ferrous/non-ferrous-metals.jpg';
-import structuralSteel from '@/assets/metal/structural-steel.jpg';
-import metalCladding from '@/assets/metal/metal-cladding.jpg';
-import architecturalMetal from '@/assets/metal/architectural-metal.jpg';
-import customMetalwork from '@/assets/metal/custom-metalwork.jpg';
-import metalExcellence from '@/assets/metal-excellence.jpg';
+import aluminiumAlloys from '@/assets/metal/non-ferrous/aluminium-alloys.jpg';
+import copperAlloys from '@/assets/metal/non-ferrous/copper-alloys.jpg';
+import zincLeadNickel from '@/assets/metal/non-ferrous/zinc-lead-nickel.jpg';
+import specialtyAlloys from '@/assets/metal/non-ferrous/specialty-alloys.jpg';
+import automotiveNonFerrous from '@/assets/metal/non-ferrous/automotive-non-ferrous.jpg';
+import electronicGradeMetals from '@/assets/metal/non-ferrous/electronic-grade-metals.jpg';
 
 const NonFerrous = () => {
   return (
     <ServiceDetailLayout 
       title="Non-Ferrous Metal Trading" 
-      subtitle="Premium Metals & Alloys"
+      subtitle="Premium Metal Solutions"
     >
       <AlternatingSection
         title="Aluminium & Aluminium Alloys"
         description="Ingots, billets, sheets, plates, coils, extrusions, and scrap aluminium for construction, packaging, transportation, and manufacturing."
-        imageSrc={nonFerrousMetals}
-        imageAlt="Aluminium products and alloys"
+        imageSrc={aluminiumAlloys}
+        imageAlt="Aluminium and aluminium alloys"
         reverse={false}
       />
 
       <AlternatingSection
         title="Copper & Copper Alloys"
         description="Copper cathodes, rods, wires, strips, and brass/bronze alloys for electrical, plumbing, electronics, and industrial applications."
-        imageSrc={structuralSteel}
-        imageAlt="Copper and copper alloy products"
+        imageSrc={copperAlloys}
+        imageAlt="Copper and copper alloys"
         reverse={true}
       />
 
       <AlternatingSection
         title="Zinc, Lead & Nickel"
         description="Primary and secondary metals used in galvanizing, batteries, alloys, and industrial manufacturing."
-        imageSrc={metalCladding}
+        imageSrc={zincLeadNickel}
         imageAlt="Zinc, lead and nickel metals"
         reverse={false}
       />
@@ -40,23 +40,23 @@ const NonFerrous = () => {
       <AlternatingSection
         title="Specialty & High-Performance Alloys"
         description="Titanium, magnesium, nickel-based alloys, and specialty metals for aerospace, medical, marine, energy, and advanced engineering sectors."
-        imageSrc={architecturalMetal}
-        imageAlt="Specialty metals and high-performance alloys"
+        imageSrc={specialtyAlloys}
+        imageAlt="Specialty and high-performance alloys"
         reverse={true}
       />
 
       <AlternatingSection
         title="Automotive Non-Ferrous Metals & Components"
         description="Aluminium body panels, engine components, copper radiators, heat exchangers, and reusable automotive parts."
-        imageSrc={customMetalwork}
-        imageAlt="Automotive non-ferrous components"
+        imageSrc={automotiveNonFerrous}
+        imageAlt="Automotive non-ferrous metals and components"
         reverse={false}
       />
 
       <AlternatingSection
         title="Electronic-Grade Metals"
         description="High-purity non-ferrous metals and scrap used in electronics, electrical systems, and precision manufacturing."
-        imageSrc={metalExcellence}
+        imageSrc={electronicGradeMetals}
         imageAlt="Electronic-grade metals"
         reverse={true}
       />

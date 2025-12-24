@@ -1,12 +1,12 @@
 import ServiceDetailLayout from '@/components/ServiceDetailLayout';
 import AlternatingSection from '@/components/AlternatingSection';
-import steelProducts from '@/assets/metal/steel/steel-products.jpg';
-import structuralSteel from '@/assets/metal/structural-steel.jpg';
-import metalCladding from '@/assets/metal/metal-cladding.jpg';
-import architecturalMetal from '@/assets/metal/architectural-metal.jpg';
-import customMetalwork from '@/assets/metal/custom-metalwork.jpg';
-import metalFabrication from '@/assets/metal/metal-fabrication.jpg';
-import metalExcellence from '@/assets/metal-excellence.jpg';
+import carbonAlloySteel from '@/assets/metal/steel/carbon-alloy-steel.jpg';
+import structuralSteelReinforcement from '@/assets/metal/steel/structural-steel-reinforcement.jpg';
+import steelSheetsCoils from '@/assets/metal/steel/steel-sheets-coils.jpg';
+import stainlessSteelProducts from '@/assets/metal/steel/stainless-steel-products.jpg';
+import steelPipesTubes from '@/assets/metal/steel/steel-pipes-tubes.jpg';
+import automotiveSteel from '@/assets/metal/steel/automotive-steel.jpg';
+import newSurplusRecycledSteel from '@/assets/metal/steel/new-surplus-recycled-steel.jpg';
 
 const Steel = () => {
   return (
@@ -17,7 +17,7 @@ const Steel = () => {
       <AlternatingSection
         title="Carbon & Alloy Steel"
         description="Structural, mild, and alloy steel products for fabrication and heavy industry."
-        imageSrc={steelProducts}
+        imageSrc={carbonAlloySteel}
         imageAlt="Carbon and alloy steel products"
         reverse={false}
       />
@@ -25,7 +25,7 @@ const Steel = () => {
       <AlternatingSection
         title="Structural Steel & Reinforcement"
         description="Beams, columns, angles, channels, joists, and reinforcement bars (rebar) for buildings and infrastructure."
-        imageSrc={structuralSteel}
+        imageSrc={structuralSteelReinforcement}
         imageAlt="Structural steel and reinforcement"
         reverse={true}
       />
@@ -33,7 +33,7 @@ const Steel = () => {
       <AlternatingSection
         title="Steel Sheets, Plates & Coils"
         description="Hot-rolled, cold-rolled, galvanized, and coated sheets and plates for shipbuilding, machinery, and manufacturing."
-        imageSrc={metalCladding}
+        imageSrc={steelSheetsCoils}
         imageAlt="Steel sheets plates and coils"
         reverse={false}
       />
@@ -41,7 +41,7 @@ const Steel = () => {
       <AlternatingSection
         title="Stainless Steel Products"
         description="Industrial, food-grade, medical, and chemical-grade stainless steel sheets, pipes, and components."
-        imageSrc={architecturalMetal}
+        imageSrc={stainlessSteelProducts}
         imageAlt="Stainless steel products"
         reverse={true}
       />
@@ -49,7 +49,7 @@ const Steel = () => {
       <AlternatingSection
         title="Steel Pipes & Tubes"
         description="Seamless and welded pipes and tubes for oil & gas, plumbing, mechanical, and industrial systems."
-        imageSrc={customMetalwork}
+        imageSrc={steelPipesTubes}
         imageAlt="Steel pipes and tubes"
         reverse={false}
       />
@@ -57,7 +57,7 @@ const Steel = () => {
       <AlternatingSection
         title="Automotive Steel Metals & Components"
         description="Steel chassis parts, body panels, engine blocks, surplus components, and scrap from end-of-life vehicles."
-        imageSrc={metalFabrication}
+        imageSrc={automotiveSteel}
         imageAlt="Automotive steel components"
         reverse={true}
       />
@@ -65,7 +65,7 @@ const Steel = () => {
       <AlternatingSection
         title="New, Surplus & Recycled Steel"
         description="Primary steel products, excess inventory, and recycled steel materials."
-        imageSrc={metalExcellence}
+        imageSrc={newSurplusRecycledSteel}
         imageAlt="New surplus and recycled steel"
         reverse={false}
       />
